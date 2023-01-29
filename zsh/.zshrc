@@ -105,4 +105,12 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias lg="/opt/homebrew/bin/lazygit"
 alias nv="/opt/homebrew/bin/nvim"
-alias nvim="/opt/homebrew/bin/nvim"
+
+#source fzf files
+
+source /opt/homebrew/Cellar/fzf/0.37.0/shell/key-bindings.zsh
+source /opt/homebrew/Cellar/fzf/0.37.0/shell/completion.zsh
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+bindkey -s ^f "$HOME/.local/scripts/tmux-sessionizer \n"
