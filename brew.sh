@@ -10,6 +10,8 @@ brew install mosh
 brew install alacritty
 brew install fzf
 $(brew --prefix)/opt/fzf/install
+brew install fd
+brew install pngpaste
 
 # Install MacOS Applications
 brew install --cask firefox
