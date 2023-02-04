@@ -49,7 +49,7 @@ return require('packer').startup(function(use)
     use { 'vimwiki/vimwiki', config = function ()
         vim.g.vimwiki_list = {
             {
-                path = '/Users/benjaminlee/Documents/test_pages/',
+                path = '/Users/benjaminlee/personal/Notes/',
                 syntax = 'markdown',
                 ext = '.md',
             }
@@ -57,4 +57,5 @@ return require('packer').startup(function(use)
     end}
     use { 'ellisonleao/glow.nvim' }
     use { 'ahmedkhalf/project.nvim' }
+    use { 'ekickx/clipboard-image.nvim' }
 end)
