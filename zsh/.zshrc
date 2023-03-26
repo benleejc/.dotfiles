@@ -104,13 +104,15 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias lg="/opt/homebrew/bin/lazygit"
-alias nv="/opt/homebrew/bin/nvim"
+alias nv="/opt/homebrew/bin/nvim ."
 
-#source fzf files
-
-source /opt/homebrew/Cellar/fzf/0.37.0/shell/key-bindings.zsh
-source /opt/homebrew/Cellar/fzf/0.37.0/shell/completion.zsh
+#source fzf files// moved to fzf.zsh
+# source /opt/homebrew/Cellar/fzf/0.37.0/shell/key-bindings.zsh
+# source /opt/homebrew/Cellar/fzf/0.37.0/shell/completion.zsh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 bindkey -s ^f "$HOME/.local/scripts/tmux-sessionizer \n"
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
