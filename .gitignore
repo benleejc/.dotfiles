@@ -1,2 +1,3 @@
 # nvim stuff
 nvim/.config/**/packer_compiled.lua
+nvim/.config/nvim/node_modules
