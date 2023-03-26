@@ -1,5 +1,3 @@
-local map = vim.keymap.set
-
 --netrw mappings
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
@@ -26,5 +24,4 @@ vim.keymap.set("n", "<leader>Y", "\"+Y")
 vim.keymap.set("n", "Q", "<nop>")
 
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
-
 
