@@ -21,6 +21,8 @@ brew install --cask plex
 brew install --cask telegram
 brew install --cask trader-workstation
 brew install --cask iterm2
+brew install --cask slack
+brew install --cask rectangle
 brew install jesseduffield/lazygit/lazygit
 
 brew tap homebrew/cask-drivers
