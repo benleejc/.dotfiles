@@ -126,3 +126,6 @@ prompt_context() {
   fi
 }
 
+if [ -f ~/.misc_stuff ]; then
+    source ~/.misc_stuff
+fi
