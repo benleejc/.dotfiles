@@ -1,3 +1,6 @@
 # nvim stuff
 nvim/.config/**/packer_compiled.lua
 nvim/.config/nvim/node_modules
+
+# other local stuff
+zsh/.misc_stuff
