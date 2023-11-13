@@ -9,6 +9,9 @@ lsp.ensure_installed({
     'sumneko_lua',
     'pylsp',
     'marksman',
+    'ansiblels',
+    'terraformls',
+    'tflint'
 })
 
 lsp.configure('sumneko_lua', {
