@@ -6,7 +6,7 @@ lsp.preset('recommended')
 lsp.ensure_installed({
     'pyright',
     'eslint',
-    'sumneko_lua',
+    'lua_ls',
     'pylsp',
     'marksman',
     'ansiblels',
