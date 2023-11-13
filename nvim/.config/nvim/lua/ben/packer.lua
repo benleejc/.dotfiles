@@ -12,13 +12,12 @@ return require('packer').startup(function(use)
         'nvim-telescope/telescope.nvim', tag = '0.1.4',
         requires = { {'nvim-lua/plenary.nvim'} }
     }
-
-    use { 'nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'}}
     use { 'preservim/vim-markdown' }
     use { 'nvim-treesitter/playground' }
     use { 'theprimeagen/harpoon' }
     use { 'mbbill/undotree' }
     use { 'tpope/vim-fugitive' }
+    use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
     use {
         'VonHeikemen/lsp-zero.nvim',
         requires = {
