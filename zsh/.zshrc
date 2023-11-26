@@ -142,3 +142,4 @@ activate_venv () {
 }
 
 alias venv_activate="activate_venv"
+alias venv_create="$HOME/.create_pyvenv.sh"
