@@ -134,3 +134,11 @@ autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /opt/homebrew/bin/terraform terraform
 
 export PATH="$PATH:~/kattis-cli"
+
+# script to activate python venv
+activate_venv () {
+    dir_name=$(basename "$PWD")
+    . $HOME/.virtualenvs/${dir_name}/bin/activate
+}
+
+alias venv_activate="activate_venv"
