@@ -126,6 +126,10 @@ prompt_context() {
   fi
 }
 
+if [ -f $HOME/.zshenv ]; then
+    source $HOME/.zshenv
+fi
+
 if [ -f ~/.misc_stuff ]; then
     source ~/.misc_stuff
 fi
