@@ -105,9 +105,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias lg="/opt/homebrew/bin/lazygit"
-alias nv="/opt/homebrew/bin/nvim ."
-
 #source fzf files// moved to fzf.zsh
 # source /opt/homebrew/Cellar/fzf/0.37.0/shell/key-bindings.zsh
 # source /opt/homebrew/Cellar/fzf/0.37.0/shell/completion.zsh
@@ -126,9 +123,6 @@ prompt_context() {
   fi
 }
 
-if [ -f $HOME/.zshenv ]; then
-    source $HOME/.zshenv
-fi
 
 if [ -f ~/.misc_stuff ]; then
     source ~/.misc_stuff
@@ -139,11 +133,7 @@ complete -o nospace -C /opt/homebrew/bin/terraform terraform
 
 export PATH="$PATH:~/kattis-cli"
 
-# script to activate python venv
-activate_venv () {
-    dir_name=$(basename "$PWD")
-    . $HOME/.virtualenvs/${dir_name}/bin/activate
-}
-
-alias venv_activate="activate_venv"
+alias lg="/opt/homebrew/bin/lazygit"
+alias nv="/opt/homebrew/bin/nvim ."
+alias venv_activate=". $HOME/.activate_pyvenv.sh"
 alias venv_create="$HOME/.create_pyvenv.sh"
