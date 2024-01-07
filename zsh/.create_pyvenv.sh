@@ -22,7 +22,7 @@ fi
 
 if [ ! -d "$venv_directory/$dir_name" ]
     then
-        python -m venv $$venv_directory/$dir_name
+        python -m venv $venv_directory/$dir_name
     else
         echo "venv directory already exists"
         echo "exiting program"
