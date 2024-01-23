@@ -67,12 +67,15 @@ return {
 
       require('mason-lspconfig').setup({
         ensure_installed = {
-            'ruff_lsp', 
+            'ruff_lsp',
             'pyright',
             'rust_analyzer',
             'lua_ls',
             'markdown',
-            'ansiblels'
+            'ansiblels',
+            'tsserver',
+            'html',
+            'css',
         },
         handlers = {
           lsp_zero.default_setup,
