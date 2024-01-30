@@ -1,7 +1,7 @@
 # nvim stuff
 nvim/.config/**/packer_compiled.lua
 nvim/.config/nvim/node_modules
-*/lazy-lock.json
+nvim/.config/nvim/*.json
 
 # other local stuff
 zsh/.misc_stuff 
