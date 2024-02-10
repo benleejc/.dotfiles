@@ -35,7 +35,7 @@ return {
       cmp.setup({
         formatting = lsp_zero.cmp_format(),
         mapping = cmp.mapping.preset.insert({
-          ['<M-Tab>'] = cmp.mapping.confirm({ select=true }),
+          ['<S-Tab>'] = cmp.mapping.confirm({ select=true }),
           ['<C-u>'] = cmp.mapping.scroll_docs(-4),
           ['<C-d>'] = cmp.mapping.scroll_docs(4),
           ['<C-f>'] = cmp_action.luasnip_jump_forward(),
