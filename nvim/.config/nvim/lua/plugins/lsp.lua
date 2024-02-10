@@ -35,11 +35,14 @@ return {
       cmp.setup({
         formatting = lsp_zero.cmp_format(),
         mapping = cmp.mapping.preset.insert({
-          ['<C-Space>'] = cmp.mapping.complete(),
+          ['<M-Tab>'] = cmp.mapping.confirm({ select=true }),
           ['<C-u>'] = cmp.mapping.scroll_docs(-4),
           ['<C-d>'] = cmp.mapping.scroll_docs(4),
           ['<C-f>'] = cmp_action.luasnip_jump_forward(),
           ['<C-b>'] = cmp_action.luasnip_jump_backward(),
+        }),
+        sources = cmp.config.sources({
+            { name = 'copilot', group_index = 2 },
         })
       })
     end
@@ -71,11 +74,11 @@ return {
             'pyright',
             'rust_analyzer',
             'lua_ls',
-            'markdown',
+            'marksman',
             'ansiblels',
             'tsserver',
             'html',
-            'css',
+            'cssls',
         },
         handlers = {
           lsp_zero.default_setup,
@@ -187,4 +190,3 @@ return {
 -- 
 -- vim.diagnostic.config({
 --     virtual_text = true,
--- })

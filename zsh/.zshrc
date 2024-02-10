@@ -137,3 +137,4 @@ alias lg="/opt/homebrew/bin/lazygit"
 alias nv="/opt/homebrew/bin/nvim ."
 alias venv_activate=". $HOME/.activate_pyvenv.sh"
 alias venv_create="$HOME/.create_pyvenv.sh"
+
