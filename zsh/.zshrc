@@ -1,8 +1,17 @@
+if [ -d "/opt/homebrew/bin" ]; then
+    echo "homebrew install detected"
+    export INSTALL_PATH="/opt/homebrew/bin"
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+else
+    export INSTALL_PATH="/usr/bin"
+fi
+
+
 # If you come from bash you might have to change your $PATH.
+
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Home brew settings
-eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -129,12 +138,13 @@ if [ -f ~/.misc_stuff ]; then
 fi
 
 autoload -U +X bashcompinit && bashcompinit
-complete -o nospace -C /opt/homebrew/bin/terraform terraform
+complete -o nospace -C $INSTALL_PATH/terraform terraform
 
 export PATH="$PATH:~/kattis-cli"
 
-alias lg="/opt/homebrew/bin/lazygit"
-alias nv="/opt/homebrew/bin/nvim ."
+alias lg="$INSTALL_PATH/lazygit"
+alias nv="$INSTALL_PATH/nvim ."
 alias venv_activate=". $HOME/.activate_pyvenv.sh"
 alias venv_create="$HOME/.create_pyvenv.sh"
+
 
